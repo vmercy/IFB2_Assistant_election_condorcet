@@ -1,0 +1,20 @@
+A=1
+B=2
+C=3
+
+liste_prefs[3][3]={{2,1,0},{0,2,1},{1,0,2}}
+mentions[3][3]={{I,B,P},{P,R,I},{T,B,I}}
+
+
+Pour le jugement majoritaire :
+- Transformer la matrice mention en une autre matrice tableau_occurences[CANDIDATS][NB_MENTIONS]
+	- Exemple : le candidat A (saisi en premier) a obtenu :
+		- 9 x la mention "A rejeter"
+		- 3 X la mention "Insuffisant"
+		- 2 X la mention "Passable"
+		- 4 X la mention "Assez Bien"
+		- 5 X la mention "Bien"
+		- 2 X la mention "Très Bien"
+	- Alors tableau_occurences[0][0]=9, tableau_occurences[0][1]=3, etc...
+- Pour chaque candidat rechercher la médiane grâce à un tableau continu
+	
